@@ -22,7 +22,7 @@ public class MyController {
         String message = "hello thymeleaf";
         model.addAttribute("message",message);
         System.out.println("hello------------");
-        System.out.println("又添加一个输出");
+        System.out.println("又添加一个输出99999999999999");
 
         return "index";
     }
