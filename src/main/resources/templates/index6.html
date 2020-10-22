@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/css/pages-cart.css">
+    <link rel="stylesheet" th:href="@{/css/pages-cart.css}">
+</head>
+<body>
+<!--include-->
+<div th:include="~{head :: head}">
+
+</div>
+<!--insert-->
+<div th:insert="~{head :: head}">
+
+</div>
+<!--replace-->
+<div th:replace="~{head :: head}">
+
+</div>
+<!--second-->
+ 这个是index 页面。。。。。。<br>
+<h1 th:text="${message}"></h1>
+</body>
+</html>

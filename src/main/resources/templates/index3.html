@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ 这个是index 页面。。。。。。<br>
+<table width="800px" style="text-align: center">
+    <tr>
+        <td>序号</td>
+        <td>用户的id</td>
+        <td>用户的名字</td>
+        <td>用户的年龄</td>
+    </tr>
+    <tr th:each="user,start:${userList}">
+       <!-- <td th:text="${start.index+1}" ></td> 索引下表0开始-->
+        <td th:text="${start.count}" ></td> <!--索引下表1开始-->
+       <!-- <td th:text="${start.size}" ></td> 集合大小-->
+        <!--<td th:text="${start.current}" ></td> 当前对象-->
+       <!-- <td th:text="${start.odd}" ></td>-->
+       <!-- <td th:text="${start.last}" ></td>-->
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.name}"></td>
+        <td th:text="${user.age}"></td>
+    </tr>
+</table>
+</body>
+</html>
